@@ -1,0 +1,63 @@
+body {
+  background-color: grey;
+}
+.carousel {
+  width: 600px;
+  height: 250px;
+  margin: 20px auto;
+  position: relative;
+  background: #000;
+}
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 250px;
+  float: left;
+  list-style: none;
+}
+.carousel-image {
+  width: 600px;
+  height: 250px;
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.active .carousel-image {
+  opacity: 1;
+}
+.navigation {
+  list-style: none;
+}
+.next {
+  position: absolute;
+  top: 46%;
+  right: 3%;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 0px 3px rgb(0, 0, 0);
+}
+.previous {
+  position: absolute;
+  top: 46%;
+  left: 3%;
+  font-size: 30px;
+  color: #fff;
+  text-shadow: 1px 0px 3px rgb(0, 0, 0);
+}
+.indicator-dot {
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  margin: 0 auto;
+}
+.indicator-dot li {
+  float: left;
+  margin: 5px;
+}
+.dot {
+  width: 10px;
+  height: 10px;
+  background: grey;
+  border-radius: 10px;
+}
